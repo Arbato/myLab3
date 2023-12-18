@@ -1,14 +1,12 @@
 //import jakarta.enterprise.context.RequestScoped;
-//import jakarta.faces.bean.ManagedBean;
-//import jakarta.faces.bean.SessionScoped;
 //
-//import java.io.Serializable;
-//
-//@ManagedBean(name="helloBean")
-//@RequestScoped
 
+import javax.annotation.ManagedBean;
+import javax.enterprise.context.RequestScoped;
 import java.io.Serializable;
 
+@RequestScoped
+@ManagedBean
 public class HelloBean implements Serializable {
 
     private String userName = "no name";
